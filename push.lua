@@ -54,7 +54,7 @@ function push:setupScreen(WWIDTH, WHEIGHT, RWIDTH, RHEIGHT, settings)
   self:initValues()
 
   if self._canvas then
-    self:setupCanvas({ "default" }) --setup canvas
+    self:setupCanvas({ "default" })
   end
 
   self._borderColor = {0, 0, 0}
@@ -68,7 +68,7 @@ function push:setupScreen(WWIDTH, WHEIGHT, RWIDTH, RHEIGHT, settings)
 end
 
 function push:setupCanvas(canvases)
-  table.insert(canvases, { name = "_render", private = true }) --final render
+  table.insert(canvases, { name = "_render", private = true })
 
   self._canvas = true
   self.canvases = {}
